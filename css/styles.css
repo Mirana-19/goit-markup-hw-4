@@ -208,11 +208,11 @@ svg {
   width: 40px;
   height: 40px;
 
-  transition: background-color var(--time) var(--cubic);
-
   border-radius: 50%;
   color: var(--light-color);
   background-color: var(--primary-brand-color);
+
+  transition: background-color var(--time) var(--cubic);
 }
 
 .socials-list-icon {
@@ -247,13 +247,14 @@ svg {
 }
 
 .logo-header {
-  margin-right: 76px;
   display: inline-block;
+  margin-right: 76px;
   padding: 24px 0;
 }
 
 .nav-list {
   display: flex;
+
   color: var(--dark-color);
   font-weight: 500;
 }
@@ -263,6 +264,7 @@ svg {
 
 .nav-list-link {
   display: inline-block;
+
   padding: 24px 0;
 
   transition: color var(--time) var(--cubic);
@@ -286,6 +288,7 @@ svg {
 
 .address-list-link {
   display: inline-block;
+
   padding: 24px 0;
 
   transition: color var(--time) var(--cubic);
@@ -309,14 +312,14 @@ svg {
 
 .hero {
   max-width: 1440px;
-  background-position: center;
   margin-left: auto;
   margin-right: auto;
   padding: 188px 0;
 
-  background-size: cover;
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     url(../images/hero/img.jpg);
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   background-color: var(--hero-bg-color);
 }
@@ -325,17 +328,17 @@ svg {
   max-width: 496px;
   margin: var(--margin-auto);
 
+  color: var(--white-color);
   font-size: 56px;
   font-weight: 700;
   line-height: 1.07;
-  color: var(--white-color);
   letter-spacing: 0.02em;
 }
 
 .hero-btn {
   display: block;
-  margin: var(--margin-auto);
   min-width: 169px;
+  margin: var(--margin-auto);
   margin-top: 48px;
   padding: 16px 32px;
 
@@ -372,8 +375,8 @@ svg {
 
   padding: 24px 0;
 
-  border-radius: 4px;
   background-color: var(--light-color);
+  border-radius: 4px;
 }
 
 .features-list-icon {
@@ -503,17 +506,19 @@ svg {
   display: flex;
   align-items: center;
   justify-content: center;
+
   width: 100%;
   height: 100%;
 
+  color: var(--subtle-text-color);
   border: 1px solid currentColor;
   border-radius: 4px;
-  color: var(--subtle-text-color);
 
   transition:
     color var(--time) var(--cubic),
     border-color var(--time) var(--cubic);
 }
+
 .customers-list-icon {
   fill: currentColor;
 }
@@ -564,6 +569,7 @@ svg {
   margin-top: 16px;
   gap: 16px;
 }
+
 .socials-footer .socials-list-link:hover,
 .socials-footer .socials-list-link:focus {
   background-color: var(--green-color);
@@ -582,6 +588,7 @@ svg {
 
   width: 100%;
   height: 100%;
+
   background: var(--modal-overlay-color);
   opacity: 1;
 
@@ -606,14 +613,14 @@ svg {
   min-width: 408px;
   min-height: 584px;
 
-  transition: transform var(--time) var(--cubic);
-
   background-color: var(--modal-bg-color);
   border-radius: 4px;
   box-shadow:
     0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 3px 0px rgba(0, 0, 0, 0.12),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+
+  transition: transform var(--time) var(--cubic);
 }
 
 .modal-backdrop.is-hidden .modal {
@@ -624,6 +631,7 @@ svg {
   position: absolute;
   top: 24px;
   right: 24px;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -677,7 +685,6 @@ svg {
   border-radius: 4px;
 
   transition-property: color, background-color, border-color, box-shadow;
-
   transition-duration: var(--time);
   transition-timing-function: var(--cubic);
 }
@@ -697,7 +704,6 @@ svg {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-
   column-gap: 24px;
   row-gap: 48px;
 
@@ -710,6 +716,7 @@ svg {
 
 .portfolio-list-link {
   display: block;
+
   transition: box-shadow var(--time) var(--cubic);
 }
 
@@ -731,14 +738,15 @@ svg {
   top: 0;
   left: 0;
   transform: translateY(100%);
+
   width: 100%;
   height: 100%;
   padding: 40px 32px;
 
-  transition: transform var(--time) var(--cubic);
-
   background-color: var(--primary-brand-color);
   color: var(--light-color);
+
+  transition: transform var(--time) var(--cubic);
 }
 
 .portfolio-list-link:hover .portfolio-list-overlay,
