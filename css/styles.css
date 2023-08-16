@@ -601,7 +601,7 @@ svg {
 .is-hidden {
   opacity: 0;
   pointer-events: none;
-  visibility: none;
+  visibility: hidden;
 }
 
 .modal {
@@ -639,8 +639,6 @@ svg {
   width: 24px;
   height: 24px;
 
-  cursor: pointer;
-
   background-color: var(--accent-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   color: var(--dark-color);
@@ -653,8 +651,7 @@ svg {
 
   transition:
     background-color var(--time) var(--cubic),
-    color var(--time) var(--cubic),
-    border var(--time) var(--cubic);
+    /* color var(--time) var(--cubic), */ border var(--time) var(--cubic);
 }
 
 .modal-btn-close:hover,
