@@ -374,9 +374,6 @@ svg {
 
   border-radius: 4px;
   background-color: var(--light-color);
-
-  /* to remove */
-  margin-bottom: 8px;
 }
 
 .features-list-icon {
@@ -487,8 +484,6 @@ svg {
 }
 
 .customers-title {
-  /* to remove */
-  margin-bottom: 72px;
 }
 
 .customers-list {
@@ -563,9 +558,6 @@ svg {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
-
-  /* to remove */
-  margin-bottom: 16px;
 }
 
 .socials-footer {
@@ -644,14 +636,9 @@ svg {
   color: var(--dark-color);
   border-radius: 50%;
 
-  /* to remove and change */
-  /* transition-property: color, background-color, border;
+  transition-property: color, background-color, border;
   transition-duration: var(--time);
-  transition-timing-function: var(--cubic); */
-
-  transition:
-    background-color var(--time) var(--cubic),
-    /* color var(--time) var(--cubic), */ border var(--time) var(--cubic);
+  transition-timing-function: var(--cubic);
 }
 
 .modal-btn-close:hover,
@@ -663,8 +650,6 @@ svg {
 
 .modal-btn-icon {
   fill: currentColor;
-  /* to remove */
-  transition: fill var(--time) var(--cubic);
 }
 
 /* --------------- Portfolio Landing Page --------------- */
@@ -691,16 +676,10 @@ svg {
   box-shadow: none;
   border-radius: 4px;
 
-  /* transition-property: color, background-color, border, box-shadow;
+  transition-property: color, background-color, border-color, box-shadow;
 
   transition-duration: var(--time);
-  transition-timing-function: var(--cubic); */
-  /* to remove */
-  transition:
-    color var(--time) var(--cubic),
-    background-color var(--time) var(--cubic),
-    border-color var(--time) var(--cubic),
-    box-shadow var(--time) var(--cubic);
+  transition-timing-function: var(--cubic);
 }
 
 .btn-list-button:hover,
