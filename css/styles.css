@@ -486,6 +486,8 @@ svg {
 }
 
 .customers-title {
+  /* to remove */
+  margin-bottom: 72px;
 }
 
 .customers-list {
@@ -510,10 +512,11 @@ svg {
 
   border: 1px solid currentColor;
   border-radius: 4px;
-
-  transition: color var(--time) var(--cubic);
-
   color: var(--subtle-text-color);
+
+  transition:
+    color var(--time) var(--cubic),
+    border-color var(--time) var(--cubic);
 }
 .customers-list-icon {
   fill: currentColor;
@@ -673,10 +676,16 @@ svg {
   box-shadow: none;
   border-radius: 4px;
 
-  transition-property: color, background-color, border, box-shadow;
+  /* transition-property: color, background-color, border, box-shadow;
 
   transition-duration: var(--time);
-  transition-timing-function: var(--cubic);
+  transition-timing-function: var(--cubic); */
+  /* to remove */
+  transition:
+    color var(--time) var(--cubic),
+    background-color var(--time) var(--cubic),
+    border var(--time) var(--cubic),
+    box-shadow var(--time) var(--cubic);
 }
 
 .btn-list-button:hover,
@@ -735,9 +744,6 @@ svg {
   transition: transform var(--time) var(--cubic);
 
   background-color: var(--primary-brand-color);
-}
-
-.overlay-text {
   color: var(--light-color);
 }
 
