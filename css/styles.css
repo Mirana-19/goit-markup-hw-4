@@ -156,6 +156,7 @@ svg {
   line-height: 1.5;
   letter-spacing: 0.04em;
 
+  padding: 0;
   color: var(--white-color);
   background-color: var(--primary-brand-color);
   border: none;
@@ -592,10 +593,12 @@ svg {
   background: var(--modal-overlay-color);
   opacity: 1;
 
-  transition: opacity var(--time) var(--cubic);
+  transition:
+    opacity var(--time) var(--cubic),
+    visibility var(--time) var(--cubic);
 }
 
-.modal-backdrop.is-hidden {
+.is-hidden {
   opacity: 0;
   pointer-events: none;
   visibility: none;
@@ -626,9 +629,15 @@ svg {
 }
 
 .modal-btn-close {
-  display: block;
-  margin-left: auto;
-  padding: 8px;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 24px;
+  height: 24px;
 
   cursor: pointer;
 
@@ -637,19 +646,28 @@ svg {
   color: var(--dark-color);
   border-radius: 50%;
 
+  /* to remove and change */
+  /* transition-property: color, background-color, border;
+  transition-duration: var(--time);
+  transition-timing-function: var(--cubic); */
+
   transition:
     background-color var(--time) var(--cubic),
-    color var(--time) var(--cubic);
+    color var(--time) var(--cubic),
+    border var(--time) var(--cubic);
 }
 
 .modal-btn-close:hover,
 .modal-btn-close:focus {
   background-color: var(--pressed-state-color);
   color: var(--white-color);
+  border: none;
 }
 
 .modal-btn-icon {
   fill: currentColor;
+  /* to remove */
+  transition: fill var(--time) var(--cubic);
 }
 
 /* --------------- Portfolio Landing Page --------------- */
@@ -684,7 +702,7 @@ svg {
   transition:
     color var(--time) var(--cubic),
     background-color var(--time) var(--cubic),
-    border var(--time) var(--cubic),
+    border-color var(--time) var(--cubic),
     box-shadow var(--time) var(--cubic);
 }
 
